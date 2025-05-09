@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #1d1825;
+    background-image: url(./black-and-purple-background-37hms2kyk9oyu6ee.jpg);
+  }
+  .container {
+    width: 100%;
+    max-width: 500px;
+    background: rgb(44, 35, 35);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 1, 0.5);
+    opacity: 85%;
+  }
+  input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  input:hover {
+    border-color: #4CAF50;
+    transform: scale(1.05);
+  }
+  button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover{
+    border-color: aqua;
+    transform: scale(1.05);
+    background-color: black;
+    color: #f3f4f6;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 8px;
+    background: #e3e3e3;
+    border-radius: 8px;
+  }
+  .delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+  }

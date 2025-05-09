@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List📝(shifty)</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>To-Do List📝</h2>
+    <input id="taskInput" type="text" placeholder="Add a new task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById("taskInput");
+      const task = input.value.trim();
+      if (!task) return;
+
+      const li = document.createElement("li");
+      li.innerHTML = `${task} <button class="delete-btn" onclick="deleteTask(this)">Delete</button>`;
+      document.getElementById("taskList").appendChild(li);
+      input.value = "";
+    }
+
+    function deleteTask(button) {
+      alert("Hope you completed the task successfully!");
+      button.parentElement.remove();
+    }
+  </script>
+</body>
+</html>
